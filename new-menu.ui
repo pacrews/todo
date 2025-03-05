@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<menu id="menu">
+		<section>
+			<item>
+				<attribute name="label" translatable="yes">_Category</attribute>
+				<attribute name="action">win.newcategory</attribute>
+			</item>
+			<item>
+				<attribute name="label" translatable="yes">_Task</attribute>
+				<attribute name="action">win.newtask</attribute>
+			</item>
+		</section>
+	</menu>
+</interface>

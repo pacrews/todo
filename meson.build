@@ -1,0 +1,5 @@
+project('todo', 'c')
+gtkdep = dependency('gtk4')
+gnome = import('gnome')
+app_resources = gnome.compile_resources('todoapp_resources', 'todoapp.gresource.xml', source_dir: meson.current_source_dir())
+executable('todo', 'main.c', 'todo_app.c', 'todo_win.c', app_resources, dependencies : gtkdep)

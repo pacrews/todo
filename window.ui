@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<template class="TodoAppWindow" parent="GtkApplicationWindow">
+		<property name="title" translatable="yes">ToDoList</property>
+		<property name="resizable">false</property>
+		<property name="default-width">800</property>
+		<property name="default-height">600</property>
+		<child type="titlebar">
+			<object class="GtkHeaderBar" id="header">
+				<child>
+					<object class="GtkMenuButton" id="newmenu">
+						<property name="label">+</property>
+					</object>
+				</child>
+			</object>
+		</child>
+		<child>
+			<object class="GtkBox" id="main_box">
+				<property name="orientation">horizontal</property>
+				<property name="spacing">250</property>
+				<child>
+					<object class="GtkFrame">
+						<child>
+							<object class="GtkListBox" id="cat_list">
+								<property name="selection-mode">single</property>
+							</object>
+						</child>
+					</object>
+				</child>
+				<child>
+					<object class="GtkFrame">
+						<child>
+							<object class="GtkListBox" id="task_list">
+								<property name="selection-mode">single</property>							</object>
+						</child>
+					</object>
+				</child>
+			</object>
+		</child>
+	</template>
+</interface>
