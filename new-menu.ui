@@ -2,7 +2,7 @@
 <interface>
 	<menu id="menu">
 		<section>
-			<item>
+				<item>
 				<attribute name="label" translatable="yes">_Category</attribute>
 				<attribute name="action">win.newcategory</attribute>
 			</item>

@@ -17,9 +17,10 @@
 		<child>
 			<object class="GtkBox" id="main_box">
 				<property name="orientation">horizontal</property>
-				<property name="spacing">250</property>
+				<property name="spacing">1</property>
 				<child>
 					<object class="GtkFrame">
+						<property name="width-request">250</property>
 						<child>
 							<object class="GtkListBox" id="cat_list">
 								<property name="selection-mode">single</property>
@@ -31,7 +32,8 @@
 					<object class="GtkFrame">
 						<child>
 							<object class="GtkListBox" id="task_list">
-								<property name="selection-mode">single</property>							</object>
+								<property name="selection-mode">single</property>
+							</object>
 						</child>
 					</object>
 				</child>
